@@ -58,7 +58,7 @@
                 <p style="font-size:13px;color:rgba(250,246,239,0.5);letter-spacing:1px;text-align:center;">
                     Dengan penuh kebahagiaan, kami mengundang<br>
                     <span
-                        style="color:var(--gold-light);font-size:16px;font-family:'Cormorant Garamond',serif;">{{ $guest->name }}</span>
+                        style="color:var(--gold-light);font-size:32px;font-family:'Cormorant Garamond',serif;">{{ $guest->name }}</span>
                 </p>
             @else
                 <p style="font-size:13px;color:rgba(250,246,239,0.5);letter-spacing:1px;text-align:center;max-width:400px;">
