@@ -32,10 +32,10 @@
         <div class="cover-subtitle">29 · 05 · 2026</div>
         <div class="cover-line"></div>
         @if($guest)
-        <div class="cover-guest">
-            <span>Kepada Yth.</span>
-            <strong>{{ $guest->name }}</strong>
-        </div>
+            <div class="cover-guest">
+                <span>Kepada Yth.</span>
+                <strong>{{ $guest->name }}</strong>
+            </div>
         @endif
         <button class="open-btn" onclick="openInvitation()">
             <span>✦</span> Buka Undangan <span>✦</span>
@@ -55,14 +55,15 @@
             <div class="hero-date">Jum'at, 29 Mei 2026</div>
             <div class="hero-divider">✦</div>
             @if($guest)
-            <p style="font-size:13px;color:rgba(250,246,239,0.5);letter-spacing:1px;text-align:center;">
-                Dengan penuh kebahagiaan, kami mengundang<br>
-                <span style="color:var(--gold-light);font-size:16px;font-family:'Cormorant Garamond',serif;">{{ $guest->name }}</span>
-            </p>
+                <p style="font-size:13px;color:rgba(250,246,239,0.5);letter-spacing:1px;text-align:center;">
+                    Dengan penuh kebahagiaan, kami mengundang<br>
+                    <span
+                        style="color:var(--gold-light);font-size:16px;font-family:'Cormorant Garamond',serif;">{{ $guest->name }}</span>
+                </p>
             @else
-            <p style="font-size:13px;color:rgba(250,246,239,0.5);letter-spacing:1px;text-align:center;max-width:400px;">
-                Dengan penuh kebahagiaan, kami mengundang Bapak/Ibu/Saudara/i untuk hadir di hari bahagia kami
-            </p>
+                <p style="font-size:13px;color:rgba(250,246,239,0.5);letter-spacing:1px;text-align:center;max-width:400px;">
+                    Dengan penuh kebahagiaan, kami mengundang Bapak/Ibu/Saudara/i untuk hadir di hari bahagia kami
+                </p>
             @endif
             <div class="scroll-hint">
                 <span>Scroll</span>
@@ -100,7 +101,7 @@
                     <div class="section-title">Dua Hati Menjadi Satu</div>
                 </div>
                 <div class="couple-grid reveal">
-                    <div>
+                    <div class="couple-groom">
                         <div class="couple-name">Moch Nauval Alfarisi</div>
                         <div class="couple-parent">
                             Putra kedua dari<br>
@@ -109,7 +110,7 @@
                         </div>
                     </div>
                     <div class="couple-sep">&amp;</div>
-                    <div>
+                    <div class="couple-bride">
                         <div class="couple-name">Zaneta Izdihar Raissa</div>
                         <div class="couple-parent">
                             Putri pertama dari<br>
@@ -145,7 +146,8 @@
                         </div>
                     </div>
                     <div class="photo-frame side">
-                        <img src="{{ asset('photos/noppeng_kecil.jpg') }}" style="width:100%;height:100%;object-fit:cover">
+                        <img src="{{ asset('photos/noppeng_kecil.jpg') }}"
+                            style="width:100%;height:100%;object-fit:cover">
                         <div class="photo-placeholder">
                             <div class="photo-icon">💍</div>
                             <span>Foto 3</span>
@@ -268,28 +270,36 @@
                         <div class="event-title">Ijab Kabul</div>
                         <div class="event-info">
                             <div class="event-info-row">
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#c9a96e" stroke-width="1.5">
-                                    <circle cx="12" cy="12" r="10" /><path d="M12 6v6l4 2" />
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#c9a96e"
+                                    stroke-width="1.5">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <path d="M12 6v6l4 2" />
                                 </svg>
                                 Jum'at, 29 Mei 2026 · 14.00 – 15.00 WIB
                             </div>
                             <div class="event-info-row">
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#c9a96e" stroke-width="1.5">
-                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" /><circle cx="12" cy="10" r="3" />
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#c9a96e"
+                                    stroke-width="1.5">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                                    <circle cx="12" cy="10" r="3" />
                                 </svg>
                                 Kediaman Zaneta, Jl. Manyar Sabrangan No. 141, Surabaya
                             </div>
                         </div>
                         <div class="maps-block">
-                            <a class="maps-btn" href="https://maps.app.goo.gl/jQf2DPWB6Nba7BLS6" target="_blank" rel="noopener">
-                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" /><circle cx="12" cy="10" r="3" />
+                            <a class="maps-btn" href="https://maps.app.goo.gl/XC6QnChqsYpn64JG8" target="_blank"
+                                rel="noopener">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                                    <circle cx="12" cy="10" r="3" />
                                 </svg>
                                 Buka Google Maps
                             </a>
                             <div class="qr-wrap">
                                 <div class="qr-code">
-                                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=80x80&data=https://maps.app.goo.gl/jQf2DPWB6Nba7BLS6&color=1a1209&bgcolor=ffffff" alt="QR Maps" width="68" height="68">
+                                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=80x80&data=https://maps.app.goo.gl/XC6QnChqsYpn64JG8&color=1a1209&bgcolor=ffffff"
+                                        alt="QR Maps" width="68" height="68">
                                 </div>
                                 <span class="qr-label">Scan QR</span>
                             </div>
@@ -302,28 +312,36 @@
                         <div class="event-title">Resepsi Pernikahan</div>
                         <div class="event-info">
                             <div class="event-info-row">
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#c9a96e" stroke-width="1.5">
-                                    <circle cx="12" cy="12" r="10" /><path d="M12 6v6l4 2" />
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#c9a96e"
+                                    stroke-width="1.5">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <path d="M12 6v6l4 2" />
                                 </svg>
                                 Jum'at, 29 Mei 2026 · 15.00 WIB – Selesai
                             </div>
                             <div class="event-info-row">
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#c9a96e" stroke-width="1.5">
-                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" /><circle cx="12" cy="10" r="3" />
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#c9a96e"
+                                    stroke-width="1.5">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                                    <circle cx="12" cy="10" r="3" />
                                 </svg>
                                 Kediaman Zaneta, Jl. Manyar Sabrangan No. 141, Surabaya
                             </div>
                         </div>
                         <div class="maps-block">
-                            <a class="maps-btn" href="https://maps.app.goo.gl/jQf2DPWB6Nba7BLS6" target="_blank" rel="noopener">
-                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" /><circle cx="12" cy="10" r="3" />
+                            <a class="maps-btn" href="https://maps.app.goo.gl/XC6QnChqsYpn64JG8" target="_blank"
+                                rel="noopener">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                                    <circle cx="12" cy="10" r="3" />
                                 </svg>
                                 Buka Google Maps
                             </a>
                             <div class="qr-wrap">
                                 <div class="qr-code">
-                                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=80x80&data=https://maps.app.goo.gl/jQf2DPWB6Nba7BLS6&color=1a1209&bgcolor=ffffff" alt="QR Maps" width="68" height="68">
+                                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=80x80&data=https://maps.app.goo.gl/XC6QnChqsYpn64JG8&color=1a1209&bgcolor=ffffff"
+                                        alt="QR Maps" width="68" height="68">
                                 </div>
                                 <span class="qr-label">Scan QR</span>
                             </div>
@@ -335,70 +353,72 @@
 
         <!-- RSVP -->
         @if($guest)
-        <section class="section-dark" id="section-rsvp">
-            <div class="container">
-                <div class="reveal">
-                    <div class="section-tag" style="color:var(--gold)">Konfirmasi</div>
-                    <div class="section-title light">Kehadiran Anda</div>
-                </div>
-                <div class="rsvp-form reveal">
-                    @if(!$guest->is_confirmed)
-                    <div id="rsvp-form-wrap">
-                        <div class="form-group">
-                            <label class="form-label">Nama Tamu</label>
-                            <div style="padding:14px 0;color:var(--cream);font-family:'Cormorant Garamond',serif;font-size:20px;border-bottom:1px solid rgba(201,169,110,0.3);">
-                                {{ $guest->name }}
+            <section class="section-dark" id="section-rsvp">
+                <div class="container">
+                    <div class="reveal">
+                        <div class="section-tag" style="color:var(--gold)">Konfirmasi</div>
+                        <div class="section-title light">Kehadiran Anda</div>
+                    </div>
+                    <div class="rsvp-form reveal">
+                        @if(!$guest->is_confirmed)
+                            <div id="rsvp-form-wrap">
+                                <div class="form-group">
+                                    <label class="form-label">Nama Tamu</label>
+                                    <div
+                                        style="padding:14px 0;color:var(--cream);font-family:'Cormorant Garamond',serif;font-size:20px;border-bottom:1px solid rgba(201,169,110,0.3);">
+                                        {{ $guest->name }}
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Konfirmasi Kehadiran</label>
+                                    <div class="radio-group">
+                                        <label class="radio-label">
+                                            <input type="radio" name="is_confirmed" value="1" checked>
+                                            <span class="radio-custom"></span>
+                                            Hadir 🎉
+                                        </label>
+                                        <label class="radio-label">
+                                            <input type="radio" name="is_confirmed" value="0">
+                                            <span class="radio-custom"></span>
+                                            Tidak Hadir
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-group" id="count-group">
+                                    <label class="form-label">Jumlah Tamu</label>
+                                    <select class="form-control" id="guest_count">
+                                        <option value="1">1 orang</option>
+                                        <option value="2">2 orang</option>
+                                        <option value="3">3 orang</option>
+                                        <option value="4">4 orang</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Ucapan &amp; Doa</label>
+                                    <textarea class="form-control" id="message" rows="3" style="resize:none"
+                                        placeholder="Tulis ucapan untuk kedua mempelai..."></textarea>
+                                </div>
+                                <button class="submit-btn" id="rsvp-btn" onclick="submitRsvp()">
+                                    Kirim Konfirmasi
+                                </button>
                             </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="form-label">Konfirmasi Kehadiran</label>
-                            <div class="radio-group">
-                                <label class="radio-label">
-                                    <input type="radio" name="is_confirmed" value="1" checked>
-                                    <span class="radio-custom"></span>
-                                    Hadir 🎉
-                                </label>
-                                <label class="radio-label">
-                                    <input type="radio" name="is_confirmed" value="0">
-                                    <span class="radio-custom"></span>
-                                    Tidak Hadir
-                                </label>
+                            <div class="rsvp-success" id="rsvp-success">
+                                <div class="check">✦</div>
+                                <h3>Terima Kasih!</h3>
+                                <p>Konfirmasi kehadiran Anda telah kami terima. Kami sangat menantikan kehadiran Anda!</p>
                             </div>
-                        </div>
-                        <div class="form-group" id="count-group">
-                            <label class="form-label">Jumlah Tamu</label>
-                            <select class="form-control" id="guest_count">
-                                <option value="1">1 orang</option>
-                                <option value="2">2 orang</option>
-                                <option value="3">3 orang</option>
-                                <option value="4">4 orang</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label class="form-label">Ucapan &amp; Doa</label>
-                            <textarea class="form-control" id="message" rows="3" style="resize:none"
-                                placeholder="Tulis ucapan untuk kedua mempelai..."></textarea>
-                        </div>
-                        <button class="submit-btn" id="rsvp-btn" onclick="submitRsvp()">
-                            Kirim Konfirmasi
-                        </button>
+                        @else
+                            <div class="rsvp-success" style="display:block;">
+                                <div class="check">✦</div>
+                                <h3>Sudah Dikonfirmasi</h3>
+                                <p>Terima kasih, {{ $guest->name }}! Anda telah mengkonfirmasi kehadiran. Kami menantikan Anda!
+                                    🎉</p>
+                            </div>
+                        @endif
                     </div>
-                    <div class="rsvp-success" id="rsvp-success">
-                        <div class="check">✦</div>
-                        <h3>Terima Kasih!</h3>
-                        <p>Konfirmasi kehadiran Anda telah kami terima. Kami sangat menantikan kehadiran Anda!</p>
-                    </div>
-                    @else
-                    <div class="rsvp-success" style="display:block;">
-                        <div class="check">✦</div>
-                        <h3>Sudah Dikonfirmasi</h3>
-                        <p>Terima kasih, {{ $guest->name }}! Anda telah mengkonfirmasi kehadiran. Kami menantikan Anda! 🎉</p>
-                    </div>
-                    @endif
                 </div>
-            </div>
-        </section>
-        <div id="autoscroll-stop"></div>
+            </section>
+            <div id="autoscroll-stop"></div>
         @endif
 
         <!-- THANK YOU -->
@@ -431,12 +451,15 @@
                     </p>
 
                     <div style="margin-top:40px;">
-                        <p style="font-family:'Cormorant Garamond',serif;font-size:13px;color:rgba(250,246,239,0.4);letter-spacing:3px;text-transform:uppercase;margin-bottom:8px;">
+                        <p
+                            style="font-family:'Cormorant Garamond',serif;font-size:13px;color:rgba(250,246,239,0.4);letter-spacing:3px;text-transform:uppercase;margin-bottom:8px;">
                             Hormat Kami</p>
-                        <p style="font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:300;font-style:italic;color:var(--gold);">
+                        <p
+                            style="font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:300;font-style:italic;color:var(--gold);">
                             Nauval &amp; Zaneta
                         </p>
-                        <p style="font-size:12px;color:rgba(250,246,239,0.3);letter-spacing:2px;margin-top:8px;">Beserta Keluarga</p>
+                        <p style="font-size:12px;color:rgba(250,246,239,0.3);letter-spacing:2px;margin-top:8px;">Beserta
+                            Keluarga</p>
                     </div>
                 </div>
 
@@ -457,12 +480,13 @@
         window.WEDDING_MUSIC_SRC = "{{ asset('music/wedding_echa_faris.mp3') }}";
         window.CSRF_TOKEN = "{{ csrf_token() }}";
         @if($guest)
-        window.RSVP_ROUTE = "{{ route('invitation.rsvp', $guest->slug) }}";
+            window.RSVP_ROUTE = "{{ route('invitation.rsvp', $guest->slug) }}";
         @else
-        window.RSVP_ROUTE = "#";
+            window.RSVP_ROUTE = "#";
         @endif
     </script>
     <script src="{{ asset('js/script.js') }}"></script>
 
 </body>
+
 </html>

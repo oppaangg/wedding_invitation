@@ -424,6 +424,33 @@ body {
     font-weight: 500;
 }
 
+/* ===== COUPLE STAGGER ANIMATION ===== */
+.couple-grid .couple-groom,
+.couple-grid .couple-bride,
+.couple-grid .couple-sep {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.couple-grid.in-view .couple-groom {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0s;
+}
+
+.couple-grid.in-view .couple-sep {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.35s;
+}
+
+.couple-grid.in-view .couple-bride {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.7s;
+}
+
 /* PHOTOS */
 .photo-section {
     background: var(--deep);
