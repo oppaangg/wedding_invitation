@@ -144,9 +144,9 @@ const observer = new IntersectionObserver(
                 const sep = document.querySelector(".couple-sep");
                 setTimeout(() => sep?.classList.add("in-view"), 1000);
 
-                // Bride muncul 2.5 detik setelah sep (total 2.5 detik)
+                // Bride muncul 2.5 detik setelah sep (total 1.2 detik)
                 const bride = document.querySelector(".couple-bride");
-                setTimeout(() => bride?.classList.add("in-view"), 2500);
+                setTimeout(() => bride?.classList.add("in-view"), 1200);
 
                 observer.unobserve(el);
             } else if (
