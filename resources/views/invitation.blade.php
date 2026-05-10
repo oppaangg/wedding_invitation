@@ -317,7 +317,7 @@
                                     <circle cx="12" cy="12" r="10" />
                                     <path d="M12 6v6l4 2" />
                                 </svg>
-                                Jum'at, 29 Mei 2026 · 15.00 WIB – Selesai
+                                Jum'at, 29 Mei 2026 · 18.00 WIB – Selesai
                             </div>
                             <div class="event-info-row">
                                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#c9a96e"
