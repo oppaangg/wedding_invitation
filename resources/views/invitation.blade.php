@@ -100,8 +100,8 @@
                     <div class="section-tag">Mempelai</div>
                     <div class="section-title">Dua Hati Menjadi Satu</div>
                 </div>
-                <div class="couple-grid reveal">
-                    <div class="couple-groom">
+                <div class="couple-grid">
+                    <div class="couple-groom reveal">
                         <div class="couple-name">Moch Nauval Alfarisi</div>
                         <div class="couple-parent">
                             Putra kedua dari<br>
@@ -109,8 +109,8 @@
                             &amp; <strong>Ibu Siti Kholifah</strong>
                         </div>
                     </div>
-                    <div class="couple-sep">&amp;</div>
-                    <div class="couple-bride">
+                    <div class="couple-sep reveal">&amp;</div>
+                    <div class="couple-bride reveal">
                         <div class="couple-name">Zaneta Izdihar Raissa</div>
                         <div class="couple-parent">
                             Putri pertama dari<br>

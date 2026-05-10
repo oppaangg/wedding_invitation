@@ -137,14 +137,24 @@ const observer = new IntersectionObserver(
             const el = e.target;
 
             if (el.classList.contains("couple-groom")) {
+                // Groom muncul duluan
                 el.classList.add("in-view");
 
-                // Bride muncul setelah groom selesai animasi
+                // Sep muncul 1 detik setelah groom
                 const sep = document.querySelector(".couple-sep");
-                const bride = document.querySelector(".couple-bride");
                 setTimeout(() => sep?.classList.add("in-view"), 1000);
-                setTimeout(() => bride?.classList.add("in-view"), 2000);
 
+                // Bride muncul 2.5 detik setelah sep (total 3.5 detik)
+                const bride = document.querySelector(".couple-bride");
+                setTimeout(() => bride?.classList.add("in-view"), 3500);
+
+                observer.unobserve(el);
+            } else if (
+                el.classList.contains("couple-sep") ||
+                el.classList.contains("couple-bride")
+            ) {
+                // Jangan langsung muncul — dikontrol dari groom trigger
+                // Tapi tetap unobserve agar tidak double-trigger
                 observer.unobserve(el);
             } else {
                 el.classList.add("in-view");
