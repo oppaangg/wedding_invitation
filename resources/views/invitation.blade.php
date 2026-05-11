@@ -395,7 +395,7 @@
                                 </div>
                                 <div class="form-group">
                                     <label class="form-label">Ucapan &amp; Doa</label>
-                                    <textarea class="form-control" id="message" rows="3" style="resize:none"
+                                    <textarea class="form-control" id="message" rows="3" style="resize:none" maxlength="1000"
                                         placeholder="Tulis ucapan untuk kedua mempelai..."></textarea>
                                 </div>
                                 <button class="submit-btn" id="rsvp-btn" onclick="submitRsvp()">

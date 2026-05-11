@@ -105,7 +105,7 @@ class GuestController extends Controller
         $validated = $request->validate([
             'is_confirmed' => 'required|boolean',
             'guest_count'  => 'required|integer|min:1|max:10',
-            'message'      => 'nullable|string|max:500',
+            'message'      => 'nullable|string|max:1000',
         ]);
         $guest->update($validated);
         return response()->json(['success' => true, 'message' => 'Konfirmasi berhasil!']);
